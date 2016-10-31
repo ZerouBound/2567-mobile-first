@@ -247,4 +247,25 @@ img {
 }
 
 
+/* Logo Animation */
+
+@keyframes logo-1 {
+	0% {background-image: url(../img/logo.png)}
+	33.33% {background-image: url(../img/logo-1.50.png)}
+	66.66% {background-image: url(../img/logo-1.75.png)}
+	100% {background-image: url(../img/logo-1.95.png)}
+	
+}
+
+#logo {
+	height:100px;
+	background-image:url(../img/logo.png);
+	animation-name: logo-1;
+	animation-duration:.5s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite;
+	background-size:contain;
+}
+
+
 	
