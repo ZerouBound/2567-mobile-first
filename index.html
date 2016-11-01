@@ -5,6 +5,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,900" rel="stylesheet">
+
+<script src="https://use.fontawesome.com/d953d068de.js"></script>
+
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
 <title>Responsive web</title>
@@ -72,27 +76,157 @@
 </div>
 
 
-<header>
-    <div class="wrapper">
-        <div class="1-6" id="logo"></div>
-        <nav class="1-2">
+<header id="home">
+    <div class="wrapper row">
+        <a href="#"><div class="col-1-6" id="logo"></div></a>
+        <nav class="col-1-2">
             <ul>
-                <li><a>Home</a></li>
-                <li><a>Work</a></li>
-                <li><a>About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </div>
-    <div>
+    <div class="bg-nightshade" id="hero">
     	<div class="wrapper">
         	<p>We <span>design</span> things</p>
-            <p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu. Aliquid delenit an pri, ad mea nostrud nominavi menandri.</p>
-            <p><a>Hire us</a></p>
-            <p><a>View work</a></p>
+            <p class="col-2-3">Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu. Aliquid delenit an pri, ad mea nostrud nominavi menandri.</p>
+            <div class="row col-1-2">
+                <div class="col-1-2"><p><a>Hire us</a></p></div>
+                <div class="col-1-2"><p><a>View work</a></p></div>
+            </div>
         </div>
     </div>
 </header>
 
+<section id="work">    
+    <div class="bg-lunar-dust">
+    	<div class="wrapper row">
+        	<div class="col-1-2">
+            	<header>
+                	<h2>Print <span>design</span></h2>
+                </header>
+                <p>Nam purto solet eu, vero mediocrem hendrerit ad ius.</p>
+            </div>
+            <div class="col-1-2">
+            	<img src="tbd" alt="A publication spread">
+            </div>
+        </div>
+    </div>
+    
+     <div>
+    	<div class="wrapper row">
+        	<div class="col-1-2">
+            	<header>
+                	<h2>Interactive <span>design</span></h2>
+                </header>
+                <p>Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.</p>
+            </div>
+            <div class="col-1-2">
+            	<img src="tbd" alt="Webpage wireframe">
+            </div>
+        </div>
+    </div>
+    
+     <div class="bg-lunar-dust">
+    	<div class="wrapper row">
+        	<div class="col-1-2">
+            	<header>
+                	<h2>App <span>design</span></h2>
+                </header>
+                <p>Exerci antiopam constituam per ex, pro odio enim te, ut eam quidam docendi ancillae. Id nisl appareat mel.</p>
+            </div>
+            <div class="col-1-2">
+            	<img src="tbd" alt="Application wireframe">
+            </div>
+        </div>
+    </div>
+    
+     <div>
+    	<div class="wrapper row">
+        	<div class="col-1-2">
+            	<header>
+                	<h2>Branding <span>design</span></h2>
+                </header>
+                <p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu.</p>
+            </div>
+            <div class="col-1-2">
+            	<img src="tbd" alt="Identity system stationary">
+            </div>
+        </div>
+    </div>  
+</section>
+
+<section class="bg-lunar-dust row" id="about">
+	<div class="wrapper">
+        <header>
+            <h2><span>Our</span> team</h2>
+            <p class="col-2-3">Ea expetenda prodesset cum, tibique principes laboramus id pro. Ei dolorem facilis volutpat sed, eu pro dicta iracundia scripserit. Vel singulis posidonium ea, primis possim voluptatum ei has. Ut usu sale modus liberavisse. Eos reque mnesarchum ea, ea tamquam disputando has.</p>
+        </header>
+        
+        <!-- x4 for the staff -->
+        <div class="row">
+            <section class="col-1-2 row">
+                <div class="col-1-2">
+                    <h3>John Doe</h3>
+                    <p>Nam purto solet eu, vero mediocrem hendrerit ad ius.<br>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></p>
+                </div>
+                <div col="1-6"></div>
+            </section>
+            
+            <section class="col-1-2 row">
+                <div class="col-1-2">
+                    <h3>Jane Doe</h3>
+                    <p>Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.<br>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></p>
+                </div>
+                <div col="1-6"></div>
+            </section>
+        </div>
+        
+        <div class="row">
+            <section class="col-1-2 row">
+                <div class="col-1-2">
+                    <h3>Mary Smith</h3>
+                    <p>Exerci antiopam constituam per ex, pro odio enim te, ut eam quidam docendi ancillae. Id nisl appareat mel.<br>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></p>
+                </div>
+                <div col="1-6"></div>
+            </section>
+            
+            <section class="col-1-2 row">
+                <div class="col-1-2">
+                    <h3>John Smith</h3>
+                    <p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu.<br>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></p>
+                </div>
+                <div col="1-6"></div>
+            </section>
+        </div>
+    </div>
+    
+</section>
+
+<footer class="bg-nightshade">
+    <div class="wrapper row">
+        <a href="#home"><div class="col-1-6" id="logo-reversed"></div></a>
+        <div class="col-1-12">
+        	<p></p>
+        </div>
+        <nav class="col-1-2">
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
    
 
 </body>

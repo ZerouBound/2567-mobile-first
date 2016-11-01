@@ -7,10 +7,15 @@
 	-ms-box-sizing:border-box;
 	-o-box-sizing:border-box;
 	box-sizing:border-box;
+	
+}
+
+* {
+	font-family: 'Raleway', sans-serif;
 }
 
 .wrapper {
-	background:#000;
+	/*background:#777; for visibility*/
 	margin:0 auto;
 	width:70%;
 }
@@ -249,23 +254,84 @@ img {
 
 /* Logo Animation */
 
-@keyframes logo-1 {
+@keyframes logo {
 	0% {background-image: url(../img/logo.png)}
-	33.33% {background-image: url(../img/logo-1.50.png)}
-	66.66% {background-image: url(../img/logo-1.75.png)}
-	100% {background-image: url(../img/logo-1.95.png)}
+	100% {background-image: url(../img/logo-12.png)}
+	
+}
+
+@keyframes logo-reversed {
+	0% {background-image: url(../img/logo-reversed.png)}
+	100% {background-image: url(../img/logo-reversed-12.png)}
 	
 }
 
 #logo {
-	height:100px;
+	display:inline-block;
+	height:58px;
 	background-image:url(../img/logo.png);
-	animation-name: logo-1;
-	animation-duration:.5s;
+	background-repeat:no-repeat;
+	animation-name: logo;
+	animation-duration:2s;
 	animation-direction:alternate;
 	animation-iteration-count:infinite;
 	background-size:contain;
 }
 
+#logo-reversed {
+	height:58px;
+	background-image:url(../img/logo-reversed.png);
+	background-repeat:no-repeat;
+	animation-name: logo-reversed;
+	animation-duration:2s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite;
+	background-size:contain;
+}
+
+
+
+ul {
+	-webkit-margin-before:0;
+	-webkit-margin-after:0;
+	-webkit-padding-start:0;
+	list-style:none;
+}
+
+li {
+	display:inline-block;
+	width:33.33%;
+	float:left;
+	text-align:center;
+}
+
+nav {
+	float:right !important;
+	padding:24px 0 !important;
+}
+
+header p {
+	margin:0 auto;
+	text-align:center;
+	float:none !important;
+	padding:0 !important;
+}
+
+#hero > .wrapper > .row {
+	margin:0 auto;
+	float:none !important;
+}
+
+.bg-nightshade {
+	background-color:#121118;
+}
+
+#hero > .wrapper {
+	background-image: url();
+}
+
+.bg-lunar-dust {
+	background-color:#d9e2eb;
+}
 
 	
