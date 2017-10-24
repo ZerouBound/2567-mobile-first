@@ -1,621 +1,186 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*--------------------------------------------------------------
-
->>> TABLE OF CONTENTS:
-
-----------------------------------------------------------------
-
-1.0 - Typography
-
-	1.1 - Headings
-	1.2 - Body Copy
-	1.3 - Buttons
-	1.4 - Forms
-	1.5 - Lists
-	1.6 - Tables
-2.0 - Navigation Menus
-	2.1 - Main
-	2.2 - Sub
-	2.3 - Footer
-3.0 - Content
-	3.1 - Site Structure
-	3.2	- Site Header
-	3.3	- Site Footer
-4.0 - Media
-5.0 - Utility
-	5.1 - Text Sizes
-	5.2 - Colors
-	5.3 - Alignments
---------------------------------------------------------------*/
-
-
-
-
-
-
-
-/*--------------------------------------------------------------
-1.0 - Typography
--------------------------------------------------------------- */
-
-* {
-	font-family: 'Raleway', sans-serif;
-}
-
-* {
-	font-family: 'Raleway', sans-serif;
-}
-
-h3 {
-	font-weight:100;
-	margin:0 0 2px;
-}
-
-h1 {
-	font-size:40px;
-}
-
-h1, h2 {
-	text-transform: uppercase;
-	margin: 0 0 10px;
-}
-
-h1 span, h2 span {
-	font-weight:100;
-}
-
-header > p, a {
-	font-size:18px;
-}
-p {
-	margin:0;
-	font-size:12px;
-}
-
-.fa {
-	font-size:x-large;
-}
-
-a {
-	color:#fff;
-}
-
-header nav a {
-	color:#000;
-}
-/*--------------------------------------------------------------
-2.0 - Navigation Menus
--------------------------------------------------------------- */
-ul {
-	-webkit-margin-before:0;
-	-webkit-margin-after:0;
-	-webkit-padding-start:0;
-	list-style:none;
-}
-
-li {
-	display:inline-block;
-	width:33.33%;
-	float:left;
-	text-align:center;
-}
-
-nav.col-1-2 {
-	float:right;
-	padding:30px 0;
-}
-
-
-
-/*--------------------------------------------------------------
-3.0 - Content
--------------------------------------------------------------- */
-
-
-/*--------------------------------------------------------------
-4.0 - Media
--------------------------------------------------------------- */
-@keyframes logo {
-	0% {background-image: url(../img/logo.png)}
-	100% {background-image: url(../img/logo-12.png)}
-	
-}
-
-@keyframes logo-reversed {
-	0% {background-image: url(../img/logo-reversed.png)}
-	100% {background-image: url(../img/logo-reversed-12.png)}
-	
-}
-
-#logo {
-	display:inline-block;
-	height:75px;
-	width:186px;
-	background-image:url(../img/logo.png);
-	background-repeat:no-repeat;
-	animation-name: logo;
-	animation-duration:2s;
-	animation-direction:alternate;
-	animation-iteration-count:infinite;
-	background-size:contain;
-	background-position: center;
-}
-
-#logo-reversed {
-	height:75px;
-	width:186px;
-	background-image:url(../img/logo-reversed.png);
-	background-repeat:no-repeat;
-	animation-name: logo-reversed;
-	animation-duration:2s;
-	animation-direction:alternate;
-	animation-iteration-count:infinite;
-	background-size:contain;
-	background-position: center;
-}
-
-#logo, #logo-reversed {
-	margin-top:10px;
-}
-
-/*--------------------------------------------------------------
-5.0 - Utility
--------------------------------------------------------------- */
-
+/*------------Site Structure----------*/
 *, *:after, *:before {
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-ms-box-sizing:border-box;
 	-o-box-sizing:border-box;
 	box-sizing:border-box;
-	
 }
 
 .wrapper {
-	/*background:#777; for visibility*/
+	background:#000;
 	margin:0 auto;
 	width:70%;
 }
-
-
 .row {
 	padding: 10px 0;
 }
-
 img {
 	max-width:100%;
 }
-
+figure {
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
 .row:after {
 	clear:both;
 	content:"";
 	display:table;	
 }
-
-/*
-[class*='col-'] {
-	padding: 0 20px;
-}
-*/
-
-
 [class*='col-'] {
 	float:left;
+	padding: 0 10px;
 }
 
+/*Cautiously think about the drawbacks of  first-child & last-child. They will not always be a first/last of type fix. Even sided padding and correlating additional wrapper width.*/
 
-[class*='col-']:first-of-type {
+[class*='col-']:first-child {
 	padding-left:0;
 }
-
-[class*='col-']:last-of-type {
+[class*='col-']:last-child {
 	padding-right:0;
 }
-
+/*------------------*/
 
 .col-1-1 {
 	width:100%;
 }
-
 .col-1-2 {
 	width:50%;
 }
-
+.blue {
+	background:blue;
+	height:100px;
+}
 .col-1-3 {
 	width:33.33%;
 }
-
 .col-2-3 {
 	width:66.66%;
 }
-
 .col-1-4 {
 	width:25%;
 }
-
 .col-3-4 {
 	width:75%;
 }
-
 .col-1-5 {
 	width:20%;
 }
-
 .col-2-5 {
 	width:40%;
 }
-
 .col-3-5 {
 	width:60%;
 }
-
 .col-4-5 {
 	width:80%;
 }
-
 .col-1-6 {
 	width:16.66%;
 }
-
 .col-5-6 {
 	width:83.33%;
 }
-
 .col-1-7 {
 	width:14.285%;
 }
-
 .col-2-7 {
 	width:28.571%;
 }
-
 .col-3-7 {
 	width:42.857%;
 }
-
 .col-4-7 {
 	width:57.142%;
 }
-
 .col-5-7 {
 	width:71.428%;
 }
-
 .col-6-7 {
 	width:85.714%;
 }
-
 .col-1-8 {
 	width:12.5%;
 }
-
 .col-3-8 {
 	width:37.5%;
 }
-
 .col-5-8 {
 	width:62.5%;
 }
-
 .col-1-9 {
 	width:11.11%;
 }
-
 .col-4-9 {
 	width:44.44%;
 }
-
 .col-5-9 {
 	width:55.55%;
 }
-
 .col-1-10 {
 	width:10%;
 }
-
 .col-3-10 {
 	width:30%;
 }
-
 .col-7-10 {
 	width:70%;
 }
-
 .col-1-11 {
 	width:9.09%;
 }
-
 .col-2-11 {
 	width:18.18%;
 }
-
 .col-3-11 {
 	width:27.27%;
 }
-
 .col-6-11 {
 	width:54.54%;
 }
-
 .col-1-12 {
 	width:8.33%;
 }
-
 .col-5-12 {
 	width:41.66%;
 }
-
 .col-7-12 {
 	width:58.33%;
 }
-
-
-
-
-
-
-/* Logo Animation */
-
-
-header p {
-	margin:0 auto;
-	text-align:center;
-	float:none !important;
-	padding:0 !important;
-}
-
-#hero > .wrapper > .row {
-	margin:0 auto;
-	float:none !important;
-}
-
-.bg-nightshade {
-	background-color:#121118;
-}
-
-#hero > .wrapper {
-	background-image: url(../img/hero.jpg);
-	background-size:cover;
-	background-position:center;
-	padding:118px 0 80px;
-	color:#fff;
-	
-}
-
-#hero .col-2-3 {
-	margin:0 auto;
-	text-align: center;
-	float:none;
-}
-
-.bg-lunar-dust {
-	background-color:#d9e2eb;
-}
-
-li > a {
-	display:inline-block;
-	padding:5px 30px;
-}
-
-header a[href="#work"] {
-	border-color:#000;
-}
-
-a[href="#work"], #hero a {
-	border:thin solid;
-	border-radius:5px;
-}
-
-a {
-	text-transform:uppercase;
-	text-decoration:none;
-	font-weight:300;
-}
-
-a:hover {
-	color:#4717f6;
-	font-weight:400;
-}
-
-li > a[href="#work"]:hover, #hero .row div:first-child a {
-	background:#4717f6;
-	color:#fff !important;
-	border-color:#4717f6;
-}
-
-footer a {
-	color:#fff;
-}
-
-
-footer a[href="#work"] {
-	border-color:#fff;
-}
-
-i {
-	color:#4717f6;
-}
-
-i:hover {
-	color:#a2379a;
-}
-
-#hero a {
-	display:inline-block;
-	padding:5px 0;
-	width:75%;
-	text-align:center;
-}
-
-#hero .row div:first-child, #hero .row div:first-child p {
-	text-align:right;
-	padding-right:10px;
-}
-
-#hero .row div:last-child, #hero .row div:last-child p {
-	text-align:left;
-	padding-left:10px;
-}
-
-#hero .row div a:hover {
-	background:#a2379a;
-	border-color:#a2379a;
-	color:#fff;	
-}
-
-#hero .row {
-	padding-top:10px;
-}
-
-#about h2 {
-	text-align: center;
-}
-
-#work > div:nth-child(even) .col-1-2:first-child, #work > div:nth-child(odd) .col-1-2:last-child {
-	float:right;
-}
-
-#work > div:nth-child(odd) .col-1-2:first-child {
-	text-align:right;
-}
-
-#work > div .col-1-2:first-child {
-	padding:90px 0;
-}
-
-#about img {
-	border: 3.5px solid #fff;
-	border-radius:100px;
-}
-
-#about .wrapper > .row section:last-child > .col-2-3 {
-	float:right;
-}
-
-#about .wrapper > .row section:first-child > .col-2-3 {
-	text-align:right;
-}
-
-#about .wrapper > .row section, #about .wrapper > .row section > .col-2-3 {
-	padding:0 4.16%;
-}
-
-
-/*typography*/
-
-
-
-#about .wrapper, #work > div {
-	padding:30px 0;
-}
-
+/*--------------- Min Res --------------*/
 
 @media (max-width: 480px) {
-	
-	#work > div {
-		padding:40px 0 30px;
+	.blue {
+	background:purple;
+	height:50px;
 	}
-	
-	#about .wrapper {
-		padding:40px 0;
-	}
-	
-	#about .wrapper > header p {
-		width:83.33%;
-	}
-	
-	h1 {
-		font-size:26px;
-	}
-	
 	[class*='col-'] {
+		padding: 0 10px;
 		margin-bottom:20px;
+	}	
+	.col-1-6:nth-child(3), .col-1-8:nth-child(4), .col-1-9:nth-child(3), .col-1-9:nth-child(6), .col-1-10:nth-child(even), .col-1-12:nth-child(4), .col-1-12:nth-child(8) {
+		padding-right:0;
 	}
-	
-	.wrapper {
-		width:95%;
+	.col-1-6:nth-child(4), .col-1-8:nth-child(5), .col-1-9:nth-child(4), .col-1-9:nth-child(7), .col-1-10:nth-child(odd), .col-1-12:nth-child(5), .col-1-12:nth-child(9) {
+		padding-left:0;
 	}
-	
-	#logo, #logo-reversed {
+	.col-1-7, .col-1-11 {
+		width:100%;
+	}
+	.col-1-7, .col-1-11 {
+		padding:0;
+	}
+	.col-1-10 {
 		width:50%;
-		margin:0 auto;
-		float:none;
 	}
-	
-	nav.col-1-2 {
-		width:100%;
-		float: none;
-	}
-	
-	#hero .col-2-3 {
-		width:83.33%;
-		margin:0 auto;
-	}
-	
-	#home .wrapper.row {
-		text-align: center;
-	}
-	
-	#work .col-1-2 > p, h2 {
-		text-align: center;
-	}
-	
-	#work .col-1-2 {
-		width:100%;
-		float:none;
-	}
-	
-	#work .col-1-2:first-child {
-		width:83.33%;
-		margin:0 auto;
-	}
-	
-	#work > div:nth-child(even) .col-1-2:first-child, #work > div:nth-child(odd) .col-1-2:last-child {
-	float:none;
-	}
-	
-	#about section.col-1-2 {
-		width:100%;
-	}
-	
-	
-	#about .wrapper > .row section {
-		padding:0;
-	}
-	
-	#about .wrapper > .row section:first-child > .col-2-3 {
-		float:right;
-	}
-	
-	#about .wrapper > .row section:last-child > .col-2-3 {
-		float:left;
-		text-align: right;
-	}
-	
-	#about .wrapper > .row section:first-child > .col-2-3 {
-		text-align:left;
-	}
-	
-	#work > div .col-1-2:first-child {
-		padding:0;
-	}
-	
-	#john-d {
-		content:url(../img/team-1.jpg)
-	}
-	
-	#mary-s {
-		content:url(../img/team-3.jpg)
-	}
-	
-	#john-s {
-		content:url(../img/team-4-alt.jpg)
-	}
-	
-	#jane-d {
-		content:url(../img/team-2-alt.jpg)
-	}
-
 }
+
+
+	
