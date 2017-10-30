@@ -10,8 +10,8 @@
 	box-sizing:border-box;
 }
 
+
 .wrapper {
-	background:#000;
 	margin:0 auto;
 	width:70%;
 }
@@ -46,6 +46,74 @@ figure {
 [class*='col-']:last-child {
 	padding-right:0;
 }
+
+/*--------------------------------------------------------------
+1.0 - Typography
+-------------------------------------------------------------- */
+
+* {
+	font-family: 'Raleway', sans-serif;
+}
+
+* {
+	font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+	font-weight:100;
+	margin:0 0 2px;
+}
+
+h1 {
+	font-size:40px;
+}
+
+h1, h2 {
+	text-transform: uppercase;
+	margin: 0 0 10px;
+}
+
+h1 span, h2 span {
+	font-weight:100;
+}
+
+header > p, a {
+	font-size:18px;
+}
+p {
+	margin:0;
+	font-size:12px;
+}
+
+.fa {
+	font-size:x-large;
+}
+
+a {
+	color:#fff;
+}
+
+header nav a {
+	color:#000;
+}
+
+
+.bg-nightshade {
+	background-color:#121118;
+}
+.bg-lunar-dust {
+	background-color:#d9e2eb;
+}
+
+
+li {
+	display:inline-block;
+	width:33.33%;
+	float:left;
+	text-align:center;
+}
+
+/*------------------------------------------------------------------------*/
 /*------------------*/
 
 .col-1-1 {
@@ -154,6 +222,143 @@ figure {
 .col-7-12 {
 	width:58.33%;
 }
+
+
+
+.txt-l {
+	text-align:left;
+}
+.txt-r {
+	text-align:right;
+}
+
+#logo, #logo-reversed {
+		width:50%;
+		margin:0 auto;
+}
+
+@keyframes logo {
+	0% {background-image: url(../img/logo.png)}
+	100% {background-image: url(../img/logo-12.png)}
+	
+}
+
+@keyframes logo-reversed {
+	0% {background-image: url(../img/logo-reversed.png)}
+	100% {background-image: url(../img/logo-reversed-12.png)}
+	
+}
+
+#logo {
+	display:inline-block;
+	height:75px;
+	width:186px;
+	background-image:url(../img/logo.png);
+	background-repeat:no-repeat;
+	animation-name: logo;
+	animation-duration:2s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite;
+	background-size:contain;
+	background-position: center;
+}
+
+#logo-reversed {
+	height:75px;
+	width:186px;
+	background-image:url(../img/logo-reversed.png);
+	background-repeat:no-repeat;
+	animation-name: logo-reversed;
+	animation-duration:2s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite;
+	background-size:contain;
+	background-position: center;
+}
+
+#hero {
+	background-image: url(../img/hero.jpg);
+	background-size:cover;
+	background-position:center;
+	padding:118px 0 80px;
+	color:#fff;
+	
+}
+
+li > a {
+	display:inline-block;
+	padding:5px 30px;
+}
+
+header a[href="#work"] {
+	border-color:#000;
+}
+
+a[href="#work"], #hero a {
+	border:thin solid;
+}
+
+a {
+	text-transform:uppercase;
+	text-decoration:none;
+	font-weight:300;
+}
+
+a:hover {
+	color:#4717f6;
+	font-weight:400;
+}
+
+li > a[href="#work"]:hover, #hero .row div:first-child a {
+	background:#4717f6;
+	color:#fff !important;
+	border-color:#4717f6;
+}
+
+footer a {
+	color:#fff;
+}
+
+
+footer a[href="#work"] {
+	border-color:#fff;
+}
+
+i {
+	color:#4717f6;
+}
+
+i:hover {
+	color:#a2379a;
+}
+
+#hero a {
+	display:inline-block;
+	padding:5px 0;
+	width:75%;
+	text-align:center;
+}
+
+#hero .row div:first-child, #hero .row div p {
+	text-align:center;
+}
+
+#hero .row div a:hover {
+	background:#a2379a;
+	border-color:#a2379a;
+	color:#fff;	
+}
+
+nav.col-1-2 {
+	float:right;
+	padding-top:10px;
+}
+#hero>.wrapper>div {
+	float:none;
+	margin:auto;
+}
+
+
 /*--------------- Min Res --------------*/
 
 @media (max-width: 480px) {
