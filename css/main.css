@@ -101,8 +101,13 @@ header nav a {
 .bg-nightshade {
 	background-color:#121118;
 }
-.bg-lunar-dust {
+.bg-lunar-dust, .rhombus-l {
 	background-color:#d9e2eb;
+}
+
+.bg-lunar-dust {
+	position:relative;
+	z-index:-3;
 }
 
 
@@ -353,11 +358,67 @@ nav.col-1-2 {
 	float:right;
 	padding-top:10px;
 }
-#hero>.wrapper>div {
-	float:none;
-	margin:auto;
+
+.base-l, .base-r {
+  background: #000;
+  display: inline-block;
+  height: 740px;
+  margin-top: -120px;
+    position: absolute;
+    width: 15%;
+}
+.base-r {
+	right:0;
 }
 
+.base-l:before, .base-r:before {
+  border-top: 370px solid transparent;
+  border-bottom: 370px solid transparent;
+  content: "";
+  height: 0;
+  top: 0;
+  position: absolute;
+  width: 0;
+}
+.base-l:before {
+  border-left: 350px solid #000;
+  right: -350px;
+}
+.base-r:before {
+  border-right: 350px solid #000;
+  left: -350px;
+}
+.align-cntr {
+	float:none;
+	margin:0 auto;
+}
+
+#work > div {
+	padding: 200px 0;
+}
+
+.rhombus-l {
+	width: 65%;
+	height: 304px;
+	-webkit-transform: skew(-44deg);
+	   -moz-transform: skew(-44deg);
+	     -o-transform: skew(-44deg);
+	position:absolute;
+	top:80px;
+	left:-20%;
+	z-index:-1;
+}
+
+.relative{
+	position:relative;
+}
+    
+#work h2, #work p {
+	z-index:100;
+}
+.base-l, .base-r, .base-l:before, .base-r:before {
+	z-index: -2;
+}
 
 /*--------------- Min Res --------------*/
 
